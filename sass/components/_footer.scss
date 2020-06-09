@@ -1,0 +1,64 @@
+.footer{
+    display: flex;
+    justify-content: center;
+
+    background-color: $back-clr-base;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1035px;
+        width: 100%;
+
+        @include mobile-only{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__nav{
+
+        margin: .83em .72em;
+
+        &:hover{
+            animation: wiggle .5s;
+        }
+
+        @include tablet-only{
+            font-size: 1.875rem;
+        }
+
+        @include mobile-only{
+            font-size: 1.3rem;
+        }
+        
+    }
+}
+
+@keyframes wiggle{
+    0%{
+        transform: translate(0,0);
+    }
+    10%,
+    30%,
+    40%,
+    50%,
+    70%{
+        transform: translate(10px, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(-10px, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}

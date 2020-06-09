@@ -1,0 +1,23 @@
+.card{
+    &--chic{
+        background-color: $back-clr-chic;
+        color: $font-clr-chic;
+    }
+
+    &__title{
+        &--chic{
+            font-size: 1.5625rem;
+            font-weight: 500;
+            font-family: $font-chic-title;
+            background: $grad-color-chic;
+            @include text-gradient;
+        }
+    }
+
+    &__subtitle{
+        &--chic{
+            font-size: 2.75rem;
+            font-family: $font-chic-subtitle;
+        }
+    }
+}

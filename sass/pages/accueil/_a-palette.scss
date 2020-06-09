@@ -1,0 +1,21 @@
+.card{
+    &--palette{
+        background-color: $back-clr-palette;
+    }
+
+    &__title{
+        &--palette{
+            padding-right: 5px;
+            font-family: $font-palette-title;
+            background: $grad-color-palette;
+            @include text-gradient;
+        }
+    }
+
+    &__subtitle{
+        &--palette{
+            font-family: $font-palette-subtitle;
+            color: $font-clr-palette;
+        }
+    }
+}

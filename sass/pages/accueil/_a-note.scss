@@ -1,0 +1,22 @@
+.card{
+    &--note{
+        background-color: $back-clr-note;
+        color: $font-clr-note;
+    }
+
+    &__title{
+        &--note{
+            font-size: 2rem;
+            font-family: $font-note-title;
+            font-weight: 500;
+        }
+    }
+
+    &__subtitle{
+        &--note{
+            font-size: 2.625rem;
+            font-family: $font-note-subtitle;
+            text-transform: uppercase;
+        }
+    }
+}

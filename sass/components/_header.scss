@@ -1,0 +1,19 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $back-clr-base;
+
+    &__logo{
+        font-weight: bold;
+        font-size: 6.3vmin;
+        margin: 0.7em 0;
+        letter-spacing: -0.05em;
+
+        @include mobile-only{
+            font-size: 2.25rem;
+        }
+    }
+}

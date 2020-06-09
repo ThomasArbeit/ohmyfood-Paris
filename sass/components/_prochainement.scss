@@ -1,0 +1,51 @@
+.prochainement{
+    margin-bottom: 1.42em;
+
+    &__text, &__dot{
+        font-size: 4vmin;
+        text-align: center;
+
+        @include tablet-only{
+            font-size: 2rem;
+        }
+
+        @include mobile-only{
+            font-size: 1.5rem;
+        }
+    }
+    &__text{
+        background-color: $back-clr-base;
+        color: $font-clr-base;
+        border-radius: .37em;
+        padding: .42em 1.7em;
+        margin: .8em 1em;
+
+        @include mobile-only{
+            margin: .8em 0;
+        }
+    }
+    &__dot{
+        &--1{
+            animation: suspension 1.4s cubic-bezier(.94,.01,.93,.64) 0s infinite alternate;
+        }
+        &--2{
+            animation: suspension 1.4s cubic-bezier(.94,.01,.93,.64) .2s infinite alternate;
+        }
+        &--3{
+            animation: suspension 1.4s cubic-bezier(.94,.01,.93,.64) .4s infinite alternate;
+        }
+    }
+}
+
+@keyframes suspension{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}

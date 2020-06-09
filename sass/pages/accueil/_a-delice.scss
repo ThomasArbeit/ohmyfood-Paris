@@ -1,0 +1,21 @@
+.card {
+    &--delice{
+        background-color: $back-clr-delice;
+    }
+
+    &__title{
+        &--delice{
+            padding-left: 5px;
+            font-family: $font-delice-title;
+            background: $grad-color-delice;
+            @include text-gradient;
+        }
+    }
+
+    &__subtitle{
+        &--delice{
+            font-family: $font-delice-subtitle;
+            color: $font-clr-delice;
+        }
+    }
+}

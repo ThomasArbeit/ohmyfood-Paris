@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+a{
+    display: block;
+    color: $font-clr-base;
+    font-size: 3.3vmin;
+    text-decoration: none;
+}
+
+span{
+    margin-left: -1vmin;
+}
