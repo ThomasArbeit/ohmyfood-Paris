@@ -102,8 +102,13 @@ span {
 }
 @media screen and (max-width: 906px) {
   .card {
-    margin: 1.2rem 0;
-    width: 97%;
+    margin: 2rem 7%;
+  }
+}
+@media screen and (max-width: 577px) {
+  .card {
+    height: 400px;
+    margin-bottom: 0;
   }
 }
 .card__title, .card__subtitle {
